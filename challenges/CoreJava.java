@@ -1,5 +1,10 @@
+package challenges;
+
+import java.util.*;
+
 public class CoreJava {
     public static void main(String[] args) {
+        /** 
         Hello();
         System.out.print("\n");
 
@@ -16,6 +21,12 @@ public class CoreJava {
         System.out.print("\n\n");
 
         Calculator();
+        System.out.print("\n");
+
+       CalculateTestScores();
+       */
+
+        repl();
     }   
     
     // Hello World Challenge
@@ -124,5 +135,93 @@ public class CoreJava {
             again = "n";
         }
         System.out.println("Thank you for using the calculator");
+    }
+
+    // Calculate 5 Test Scores Challenge
+    public static void CalculateTestScores(){
+        Scanner in = new Scanner(System.in);
+        int[] scores = new int[5];
+
+        for(int i = 0; i < 5; i++){
+            System.out.print("Enter Test Score " + (i+1) + ": ");
+            scores[i] = in.nextInt();
+        }
+
+        in.close();
+
+        System.out.print("\n\n");
+
+        int total = 0;
+        int highest = scores[0];;
+        int lowest = scores[0];
+        for(int i = 0; i < 5; i++ ){
+            total += scores[i];
+            if(scores[i] > highest)
+                highest = scores[i];
+            if(scores[i] < lowest)
+                lowest = scores[i];
+        }
+
+        System.out.println("Total: " + total);
+        System.out.println("Average: " + (total/5));
+        System.out.println("Highest: " + highest);
+        System.out.println("Lowest: " + lowest);
+
+        System.out.println("\nYour values were:");
+
+        for(int i = 0; i < 5; i++){
+            if(scores[i] < 60)
+                System.out.println(scores[i] + " - F");
+            else if (scores[i] < 70)
+                System.out.println(scores[i] + " - D");
+            else if (scores[i] < 80)
+                System.out.println(scores[i] + " - C");
+            else if (scores[i] < 90)
+                System.out.println(scores[i] + " - B");
+            else
+                System.out.println(scores[i] + " - A");
+        }
+    }
+
+    //Repl challenge
+    public static void repl(){
+        Scanner in = new Scanner(System.in);
+        boolean again = true;
+        Repl bank = new Repl();
+
+        while(again){
+            double amount;
+
+            System.out.println("\n1. Check Balance\n2. Deposit\n3. Withdraw\n4. Exit");
+
+            try {
+                int input = in.nextInt();
+                switch (input) {
+                    case 1:
+                        bank.checkBalance();;
+                        break;
+                    case 2:
+                        System.out.print("Enter amount to deposit: ");
+                        amount = in.nextDouble();
+                        bank.deposit(amount);
+                        break;
+                    case 3:
+                        System.out.print("Enter amount to withdraw: ");
+                        amount = in.nextDouble();
+                        bank.withdraw(amount);
+                        break;
+                    case 4:
+                        again = false;
+                        break;
+                    default:
+                        System.out.println("Please enter valid number");
+                }
+            } catch (Exception e) {
+                System.out.println("Please enter a valid number");
+            }
+        }
+        in.close();
+
+        System.out.println("Thank you for using our bank");
     }
 }

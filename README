@@ -1,0 +1,3 @@
+To run the challenges, load run java challenges.CoreJava and interact with the terminal. Must be done from the root repo
+
+javac challenges/Repl.java challenges\CoreJava.java to compile the basic challenges, in CoreJava, but if classes exist, this should not be needed
