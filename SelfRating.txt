@@ -1,0 +1,19 @@
+9/2/2026
+
+1-5 Rating assuming 1 is no knowledge and 5 is mastery.
+
+Java: 3. 5/10 I know a lot of the basics, but the HackerRank activities have been a challenge in learning new techniques and technologies
+
+OOP concepts: 3. I feel very confident in what I know about OOP; however, there may be things I don't know that I don't know
+
+SQL: 3. I feel confident. I would do a 6/10 I have experience  in MySQL but it's been a while and I have had trouble understanding/using joins
+
+HTML/CSS/JavaScript: 4. I have a lot of experience in frontend and feel like I have a good understanding of these concepts
+
+React/Angular: 4 in React. 1 in Angular. I have a lot of frontend experience in React but none in Angular
+
+Git/Github: 4. 8-9 out of 10. I'm pretty confident I know most of how it works but also only engage in Git/Github in quick bursts
+
+Communication: 4. 8/10. While I'm not perfect, I do believe I am good at expressing myself and thinking on my feet in a professional setting.
+
+Identify your 3 weakest areas: Java, SQL, Angular
