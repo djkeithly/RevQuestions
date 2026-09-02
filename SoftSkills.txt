@@ -1,19 +1,94 @@
+9/1/2026
+
 1. Talk about a time where you had to accept or seek help for a problem.
 
-2. Discuss a time where you needed to work with a group on a issue. 
+When I was working on an online checkout system for the CometCupboard, I was tasked by our team lead with making an online queue for the check in process. 
+This queue system involved modifying the permissions of the user during different stages of the queue so that they could only access the relevant content for their place in line.
+I had no experience at this time with working on permissions but did my best to create a working queue system.
+While I created something that worked on my machine, it didn't work anywhere else and so I had to go to the team lead who walked me through what I had done well and wrong.
+I was shown how my idea was correct but where I had been working was wrong and that I could solve the problem much more simply by modifying existing permission setters.
+As a result, the way I think about reusing and modifying functions is different now and I believe I am all the better for it.
+
+2. Discuss a time where you needed to work with a group on a issue.
+
+While I was working on my first project for the Legacy Retirement Community, I was put in a sub group with another Sophomore that was also new to projects.
+The two of us were give small tasks to work on to build out skills and confidence. One of these was removing data. 
+Neither of us knew was a database schema was and this was modified with a key element being completely deleted from the schema.
+This was not a problem until I needed to migrate the database again and thus anytime I accessed the application, my database would try to fetch data that wasn't there and would crash.
+Me and the other Sophomore were tasked with repairing it together and thus we needed to split work and research what different terms meant to understand what the issue was.
+It taught me a lot about how to debug and research in a group setting as well as splitting work and be willing to admit when I didn't understand something.
 
 3. Give an example where you disagreed with a teammate or were in conflict with a teammate.
 
+The CometCupboard project, at the time of my joining, was a project about two years in the making that had seen substantial redesign and the team lead had been there for a long time.
+This team lead had very particular ideas about how he wanted things done and how they were to look that resulted in some degree of what I perceived as aggression.
+A lot of his wants and needs for the project I did not feel were explained to me clearly and for a while I did dislike the team lead and while we didn't outwardly fight, our working relationship was not good.
+It took sitting down and talking with him before understanding his position and what he had promised the client to really understand why he acted the way he did.
+Ina addition, sharing my point of view did soften how he lead the group to a degree. 
+While we did not end up as friends at the end of my time at the project, I found being a bit more forward to understand my teammate's thoughts has been a skill that has helped me in other projects as well. 
+
 4. Describe how you handle problems were the solution is not immediately obvious.
+
+I have had several projects both in an academic setting and project based setting where this has applied. 
+For example, one of my classes wanted us to create what amount to a breadth first search using stacks to find the shortest path between two points. 
+At the time, I was newer to programming and did not understand how to approach this and how to apply stacks to this problem.
+However, when faced with a problem I do not understand, I make some solution first and then refine it, thinking around what already exists.
+I believe my first solution was to try passing the whole stack down the path and then back up again which didn't work.
+Eventually, thinking both from starting at the front and the end with my solution I arrived at the correct answer. 
+Essentially, I always try to have something written and the refine it by seeing where the initial solution fails.
 
 5. Talk about a time when you needed to quickly learn an unfamiliar skill or technology.
 
+During my time developing an application called BiteSync I was, at one point, the only frontend developer working with one backend developer.
+We each had our own domain of the project we worked on and we responded to each other's issues and progress to move the project forward. 
+During this time period, he took a vacation around the time I discovered that one of the api endpoints needed to return additional data. 
+I had not worked with a backend ever at this point and I didn't want to wait for him to get back so I did my best to figure out how to modify the backend.
+Through both research and reviewing the code he had previously written, I managed to get the backend to return the data I needed.
+My modification did need review and changes upon my teammates return, but it solved the immediate problem and kept me from bottle neck during the project.
+
 6. Tell me about a time where your solution to a problem didn't work out. What happened and what was your response?
+
+For my senior capstone project, a Road Report AI, I was tasked with data Engineering. 
+I was to take a bunch of crash data and weather data and return history for when car crashes did and did not happen.
+For the weather I used a source that took weather airports as they were recording weather the had for sure happened as opposed to speculation.
+I used this for a while and it took a lot of preprocessing to get to work the way I needed it to. However, I did not test how broad the source was.
+Eventually I came to the conclusion that it would not provide the amount of data I needed ot to provide, only one location for an extremely large area.
+This was not useable and I had to pivot to a source called OpenMeteo that provided any feasible location but was more speculative.
+This boosted the ability of the model to predict and taught me about testing my tools before I begin a task.
 
 7. Discuss a time where you needed to meet a deadline and how you handled it.
 
+For my senior capstone project I was the lead data engineer working to build training data for the AI model that would predict road safety.
+The training data included automating the transformation of crash data, getting third party weather data, transforming weather data, creating negative samples, and then reducing the data for all of Texas.
+While initially I was confident in my ability to produce all of these things, scope creep and technical issues arose. 
+With three weeks left, I had only managed to make the rough draft of training data with a already pre-formatted crash data but appropriate weather data.
+At this time, I realized I needed to prioritize what I could get done before the deadline beyond what should be done. 
+I ended up prioritizing a workable MVP for the presentation that was due which meant I had to cut a lot of scope including expanding the System for all of Texas and cutting the large amount of data generated.
+While it was not the most fleshed out system, it worked for the project and we received a good enough grade for the project. It taught me to get done with what is essential and then expand.
+
 8. Do you prefer working in a team or solo? Explain. 
+
+I prefer working with a team. During my BiteSync project I was at one point the frontend lead with another person as backend lead.
+I was responsible for making the application functional to the user while he was responsible for returning data and ensuring that I had things to present the user.
+During this time we both had planned tasks to do, but would encounter issues or more data we needed from the other during development.
+Working with a partner that could modify their end allowed for more to get done in a time frame and prevented one of us from completely stalling on part of a project. 
 
 9. Talk about a time where you needed to lead or took charge during a group setting. 
 
+When I was working on BiteSync, during it's beginnings there were six people working on the team, two for frontend, two for testing, two for backend.
+I was not the leader during this time but just the frontend lead.
+In the beginning phases of the project we had to do a lot of documentation to get the project off the group and the group stalled a lot in this phase.
+The group deliberated a lot about what the best way to go about developing the project and how we might best be able to respond to changes.
+While this was worthwhile to a degree as it kept the group on track, at some point it became overbearing and prevented us from moving forward.
+I sat down with the group and lead the team meet for the first time to ensure that all the details could get hammered out so forward progress could being.
+These ended up not being perfect documents, but provided us a base to being working.
+Many needed to be rewritten during development but provided a ground to move forward on.
+
 10. Give an example of when you failed and how you reacted to it. 
+
+During an algorithms class, test cases were introduced and were our primary way on being graded for our projects.
+During my freshmen year this was new to me and while I approached code thinking about edge cases to a degree, not nearly as much as I needed to.
+For the first assignment we needed to create some sorting algorithm and I got to work.
+I learned at the end that I had not considered anywhere near the amount of cases that I should have.
+This lead me to look toward collaborating with other people doing similar things to think of all the different inputs into a particular function.
+Having this group of others helping me transform the way I thought made these future test cases easier to discover and think about.   
