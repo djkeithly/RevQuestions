@@ -1,3 +1,25 @@
-To run the challenges, load run java challenges.CoreJava and interact with the terminal. Must be done from the root repo
+The CoreJava challenges involve both the CoreJava.java file and the Repl.java file.
 
-javac challenges/Repl.java challenges\CoreJava.java to compile the basic challenges, in CoreJava, but if classes exist, this should not be needed
+The CoreJava challenges must be run from the root repo. To run:
+
+challenges.CoreJava
+
+To compile in the event they must be compiled
+
+javac challenges/Repl.java challenges\CoreJava.java
+challenges.CoreJava
+
+---
+
+SeptemberThird.java must be run from the challenges repo:
+
+cd challenges
+java SeptemberThird
+
+They should be compiled, but if the need to compile exists:
+
+cd challenges
+javac SeptemberThird.java
+java SeptemberThird
+
+---
