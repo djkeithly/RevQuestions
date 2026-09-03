@@ -4,29 +4,36 @@ import java.util.*;
 
 // javac SeptemberThird.java
 // java SeptemberThird
+
+// Using one scanner as it prevents crashing when running all methods in sequence
 public class SeptemberThird {
     public static void main(String[] args) {
-        //REPL();
+        Scanner in = new Scanner(System.in);
 
-        //PasswordValid();
+        REPL(in);
 
-        //WordAnalyzer();
+        PasswordValid(in);
+
+        WordAnalyzer(in);
+
+        in.close();
     }
 
 
     // REPL APP Challenge
-    public static void REPL(){
-        Scanner in = new Scanner(System.in);
-
+    // When reading primitives, the read needed to be added so that it would keep reading strings.
+    public static void REPL(Scanner in){
         // Can't break outside of a loop in a switch. While will run until false
         boolean again = true;
 
-        while(again){
-            String input = in.next();
+        String input;
 
+        while(again){
             int firstNumber;
             int secondNumber;
             String reverseString;
+
+            input = in.nextLine();
 
             switch(input.toLowerCase()){
                 case("help"):
@@ -38,27 +45,31 @@ public class SeptemberThird {
                     System.out.print("Second Number: ");
                     secondNumber = in.nextInt();
                     System.out.println("Result: " + (firstNumber + secondNumber) + "\n");
+                    in.nextLine();
                     break;
                 case("subtract"):
                     System.out.print("First Number: ");
                     firstNumber = in.nextInt();
                     System.out.print("Second Number: ");
                     secondNumber = in.nextInt();
-                    System.out.println("Result: " + (firstNumber - secondNumber));
+                    System.out.println("Result: " + (firstNumber - secondNumber) + "\n");
+                    in.nextLine();
                     break;
                 case("multiply"):
                     System.out.print("First Number: ");
                     firstNumber = in.nextInt();
                     System.out.print("Second Number: ");
                     secondNumber = in.nextInt();
-                    System.out.println("Result: " + (firstNumber * secondNumber));
+                    System.out.println("Result: " + (firstNumber * secondNumber) + "\n");
+                    in.nextLine();
                     break;
                 case("divide"):
                     System.out.print("First Number: ");
                     firstNumber = in.nextInt();
                     System.out.print("Second Number: ");
                     secondNumber = in.nextInt();
-                    System.out.println("Result: " + (firstNumber / secondNumber));
+                    System.out.println("Result: " + (firstNumber / secondNumber) + "\n");
+                    in.nextLine();
                     break;
                 case("random"):
                     System.out.print("Minimum: ");
@@ -71,12 +82,10 @@ public class SeptemberThird {
                         break;
                     }
                     System.out.println("Result: " + ((int) Math.floor((Math.random() * (secondNumber + 1 - firstNumber) + firstNumber))) + "\n");
+                    in.nextLine();
                     break;
                 case("reverse"):
                     System.out.print("Enter Text: ");
-                    
-                    // Won't read user input unless I nextLine nothing like this
-                    in.nextLine();
                     reverseString = in.nextLine();
                     for(int i = reverseString.length() - 1; i >= 0; i--){
                         System.out.print(reverseString.charAt(i));
@@ -92,12 +101,10 @@ public class SeptemberThird {
                     break;
             }
         }
-        in.close();
     }
 
     // Password Validator
-    public static void PasswordValid(){
-        Scanner in = new Scanner(System.in);
+    public static void PasswordValid(Scanner in){
 
         boolean upper;
         boolean lower;
@@ -139,20 +146,14 @@ public class SeptemberThird {
             else 
                 System.out.println("Password Rejected:\n-Must contain an uppercase letter\n-Must contain a number\n-Must be at least 8 characters\n");
         }
-
-        in.close();
         System.out.println("Password accepted!");
     }
 
     // Word Analyzer
-    public static void WordAnalyzer(){
-        Scanner in = new Scanner(System.in);
-
+    public static void WordAnalyzer(Scanner in){
         System.out.print("Enter a word: ");
         String word = in.nextLine();
         System.out.print("\n");
-
-        in.close();
 
         int spaces = 0;
         int vowels = 0;
