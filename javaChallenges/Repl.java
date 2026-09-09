@@ -1,4 +1,4 @@
-package challenges;
+package javaChallenges;
 
 public class Repl {
     private double balance;

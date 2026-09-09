@@ -1,4 +1,4 @@
-package challenges;
+package javaChallenges;
 
 import java.util.*;
 

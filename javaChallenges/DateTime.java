@@ -1,4 +1,4 @@
-package challenges;
+package javaChallenges;
 
 import java.time.*;
 import java.time.temporal.TemporalAdjusters;

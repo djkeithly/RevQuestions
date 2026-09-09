@@ -1,4 +1,4 @@
-package challenges;
+package javaChallenges;
 
 import java.util.*;
 
@@ -38,7 +38,7 @@ public class SeptemberThird {
 
             switch(input.toLowerCase()){
                 case("help"):
-                    System.out.println("Avaliable Commands:: \n\tadd\n\tsubtract\n\tmultiply\n\tdivide\n\trandom\n\treverse\n\tquit\n");
+                    System.out.println("available Commands:: \n\tadd\n\tsubtract\n\tmultiply\n\tdivide\n\trandom\n\treverse\n\tquit\n");
                     break;
                 case("add"):
                     System.out.print("First Number: ");
