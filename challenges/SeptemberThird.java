@@ -1,3 +1,4 @@
+package challenges;
 
 import java.util.*;
 

@@ -1,3 +1,5 @@
+## Core Java
+
 The CoreJava challenges involve both the CoreJava.java file and the Repl.java file.
 
 The CoreJava challenges must be run from the root repo. To run:
@@ -7,9 +9,11 @@ challenges.CoreJava
 To compile in the event they must be compiled
 
 javac challenges/Repl.java challenges\CoreJava.java
-challenges.CoreJava
+java challenges.CoreJava
 
 ---
+
+## SeptemberThird
 
 SeptemberThird.java must be run from the challenges repo:
 
@@ -19,7 +23,12 @@ java SeptemberThird
 They should be compiled, but if the need to compile exists:
 
 cd challenges
-javac SeptemberThird.java
-java SeptemberThird
+javac challenges/SeptemberThird.java
+java challenges.SeptemberThird
 
 ---
+
+## DateTime
+
+javac challenges/DateTime.java
+java challenges.DateTime
