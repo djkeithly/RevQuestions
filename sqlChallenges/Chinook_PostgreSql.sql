@@ -16,6 +16,9 @@
 /*******************************************************************************
    Create Tables
 ********************************************************************************/
+DROP SCHEMA IF EXISTS public CASCADE;
+CREATE SCHEMA public;
+
 CREATE TABLE album
 (
     album_id INT NOT NULL,

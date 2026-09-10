@@ -8,7 +8,7 @@ Most of these files contain functions that are commented out. To test all the fu
 
 These challenges are pulled from the Core Java slides provided by Revature during week 2. These challenge are in several places across the slides and will thus not be linked. However, the name of each function corresponds to the name of the challenge
 
-The CoreJava challenges involve both the CoreJava.java file and the Repl.java file and thus to run both, must be compiled. Many of the functions are commented out at present and to test every function, some manual uncommenting will need to be done
+The CoreJava challenges involve both the CoreJava.java file and the Repl.java file and thus to run both, they both must be compiled. Many of the functions are commented out at present and to test every function, some manual uncommenting will need to be done
 
 The following commands compile and run the files:
 

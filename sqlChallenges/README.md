@@ -14,6 +14,8 @@ docker run -d --name chinook-postgres -p 5432:5432 -e POSTGRES_USER=chinook -e P
 
 Make the connection through VSCode where the Sever Name is 'localhost' the username is 'chinook' the password is 'password' the database is named 'chinook' and the connection name is 'chinook'. Once the connection is made this file can be run.
 
+**This file will drop the public schema. If you want to run this file and do not want to drop the public schema, personal edits must be made.**
+
 ## SQL_postgresql.sql
 
 Ensure there is a connection to the chinook database and then the file can be run directly or one line at a time to test each connection. Each command should have a comment that explains what problem it is solving. These correspond to slide 57 on the SQL slides provided by Revature.
