@@ -14,6 +14,10 @@ Contains the files that solve all the java challenges presented during the cours
 
 This directory contains a text file that links to google drive stored video files of all the one-on-one videos recorded.
 
+## personalPractice
+
+This directory is drills that I am going over to prepare for assessments using problems either repeated inside of the challenges or done on my own. These are not Revature drills and are instead for my own practice
+
 ## sqlChallenges
 
 Contains .sql files that solve all the POSTGRESQL and related challenges as well as a README with instructions on how set up the needed database connection and run the files.
