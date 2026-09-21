@@ -133,3 +133,7 @@ $$ language plpgsql;
 SELECT * FROM get_customer_spending(1);
 
 DROP FUNCTION get_customer_spending(integer);
+
+-- Get the customer who spent the most in each country
+
+SELECT 

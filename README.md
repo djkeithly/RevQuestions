@@ -10,6 +10,10 @@ These are the files from the times when I was to take attendance as team lead bu
 
 Contains the files that solve all the java challenges presented during the course. This directory also contains the README file that contains instructions on how to compile and run all the files inside.
 
+## mongoChallenges
+
+Contains the file that solves the MongoDB challenges presented on 9/21/2026 from the slide set MongoDB
+
 ## oneOnOne
 
 This directory contains a text file that links to google drive stored video files of all the one-on-one videos recorded.
