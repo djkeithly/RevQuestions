@@ -8,9 +8,9 @@ This file contains the challenges done on 9/21/2026 on Week 5 under the MongoDB 
 
 This file requires a mongo database base to be set up to connect to. This uses the MongoDB extension for VSCode and the compile instructions inside of the MongoDB slides. For ease of access they are located here.
 
-'''bash
+```bash
 docker run -d --name mongodb-sandbox -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password mongo:8
-'''
+```
 
 To connect the database using the MongoDB extension, adding a connection without modifying the user connection so long as it is pointing to the default port of 27017 will connect it appropriately.
 
