@@ -6,6 +6,10 @@ This repository contains most of the training exercises and deliverables that we
 
 These are the files from the times when I was to take attendance as team lead but otherwise has nothing of note.
 
+## htmlChallenges
+
+These are the combined HTML and CSS files associates with the challenges presented during the HTML portion of the training course with a README that should explain all the different files adn their associated roles
+
 ## javaChallenges
 
 Contains the files that solve all the java challenges presented during the course. This directory also contains the README file that contains instructions on how to compile and run all the files inside.

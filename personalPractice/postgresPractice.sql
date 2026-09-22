@@ -180,3 +180,7 @@ $$ language plpgsql;
 SELECT * FROM get_customer_total(6);
 
 DROP FUNCTION get_customer_total(integer);
+
+-- RANK Function
+
+SELECT invoice_id, 
