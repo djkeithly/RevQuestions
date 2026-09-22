@@ -135,5 +135,48 @@ SELECT * FROM get_customer_spending(1);
 DROP FUNCTION get_customer_spending(integer);
 
 -- Get the customer who spent the most in each country
+SELECT c.customer_id, c.first_name, c.last_name, c.country, ranked.totalMoney
+    FROM customer c
+    JOIN(
+        SELECT c.customer_id, SUM(i.total) AS totalMoney, RANK() OVER(
+            PARTITION BY c.country
+            ORDER BY SUM(i.total) DESC
+        ) AS rank
+            FROM customer c
+            JOIN invoice i
+                ON c.customer_id = i.customer_id
+            GROUP BY c.customer_id) AS ranked
+        ON c.customer_id = ranked.customer_id
+        WHERE ranked.rank = 1;
 
-SELECT 
+-- Create a view
+DROP VIEW IF EXISTS customer_spending
+
+CREATE VIEW customer_spending AS
+    SELECT c.customer_id, c.first_name, c.last_name, c.country, SUM(i.total) AS total_spent
+        FROM customer c
+        JOIN invoice i
+            ON c.customer_id = i.customer_id
+        GROUP BY c.customer_id;
+
+SELECT *
+    FROM customer_spending
+    WHERE total_spent > 45
+    ORDER BY total_spent DESC;
+
+-- Create a function
+
+CREATE OR REPLACE FUNCTION get_customer_total(c_id INT)
+RETURNS TABLE(total NUMERIC) AS $$
+    BEGIN
+        RETURN QUERY
+            SELECT SUM(i.total)
+                FROM invoice i
+                WHERE i.customer_id = c_id
+                GROUP BY i.customer_id;
+    END;
+$$ language plpgsql;
+
+SELECT * FROM get_customer_total(6);
+
+DROP FUNCTION get_customer_total(integer);
